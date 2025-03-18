@@ -1,0 +1,37 @@
+{
+  "name": "medusajs-rules-notification-provider",
+  "version": "0.1.0",
+  "description": "A MedusaJS notification provider that forwards notifications based on rules.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alphasolutionsrepo/medusajs-rules-notification-provider"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepare": "npm run build",
+    "test": "echo \"No tests yet\""
+  },
+  "author": "Alpha Solutions",
+  "license": "MIT",
+  "dependencies": {
+    "@medusajs/framework": "^2.6.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.2"
+  },
+  "keywords": [
+    "medusajs",
+    "medusa",
+    "medusa-provider",
+    "medusa-notification-rules-provider",
+    "medusajs-rules-notification-provider"
+  ]
+}
