@@ -66,10 +66,6 @@ class RulesNotificationProviderService extends AbstractNotificationProviderServi
   async send(
     notification: ProviderSendNotificationDTO
   ): Promise<ProviderSendNotificationResultsDTO> {
-    this.logger_.info(
-      `Sending notification to ${JSON.stringify(notification, null, 2)}`
-    );
-
     let finalTo = notification.to;
 
     // Determine the environment: use the provided env, or fall back to NODE_ENV
